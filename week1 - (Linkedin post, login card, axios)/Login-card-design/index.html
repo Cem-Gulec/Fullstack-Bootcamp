@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="card">
+        <div class="login-area">
+          Login
+        </div>
+        <hr class="hr-below-login" />
+        <div class="text-area">
+          <form method="post" class="form">
+            <input
+              id="user-name"
+              class="form-content"
+              type="email"
+              placeholder="Username"
+              name="user-name"
+              autocomplete="on"
+              required
+            />
+            <div class="form-border"></div>
+            <input
+              id="user-password"
+              class="form-content"
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+            <div class="form-border"></div>
+            <legend id="forgot-pass">Forgot password?</legend>
+            <input id="submit-btn" type="submit" name="submit" value="Login" />
+          </form>
+        </div>
+        <div class="personal-info">
+          <div>Not a member?&nbsp;</div>
+          <div>
+            <p id="signup">Signup</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
