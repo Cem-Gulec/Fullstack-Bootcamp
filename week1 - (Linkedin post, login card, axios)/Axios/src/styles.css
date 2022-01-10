@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > .child-holder {
+  background-color: #d3f4ff;
+  margin: 0.25em;
+  padding: 0.25em;
+}
+
+.child-holder {
+  border: 1px solid #5577ff;
+}
+
+.child {
+  color: #0000ff;
+  font-size: 1.5em;
+}
