@@ -1,11 +1,12 @@
 <template>
   <div class="header-container">
     <input v-model="searchText" id="search-input" type="text">
-    <span @click="navigateToFavoritePage">asd</span>
+    <span @click="navigateToFavoritePage">{{ favoriteCount }}</span>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   name: "Header",
   data() {
@@ -17,6 +18,11 @@ export default {
     navigateToFavoritePage() {
       this.$router.push("/favorites/bootcamp")
     }
+  },
+  computed: {
+    ...mapGetters({
+      favoriteCount: "getFavoriteCount"
+    })
   },
   watch: {
     searchText(){
