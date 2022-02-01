@@ -1,3 +1,6 @@
 [submodule "week-1-assignment-Cem-Gulec"]
 	path = week-1-assignment-Cem-Gulec
 	url = https://github.com/152-Modanisa-FullStack-Bootcamp/week-1-assignment-Cem-Gulec
+[submodule "week-2-assignment-Cem-Gulec"]
+	path = week-2-assignment-Cem-Gulec
+	url = https://github.com/152-Modanisa-FullStack-Bootcamp/week-2-assignment-Cem-Gulec
