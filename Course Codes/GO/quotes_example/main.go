@@ -12,6 +12,7 @@ import (
 func main() {
 	client := client.NewClient(config.C.ServiceURL)
 	service := service.NewService(client)
+	fmt.Println(service.Quotes())
 	handler := handler.NewHandler(service)
 
 	http.HandleFunc("/", handler.Quotes)

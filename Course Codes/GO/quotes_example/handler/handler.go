@@ -28,10 +28,10 @@ func (c *Handler) Quotes(w http.ResponseWriter, r *http.Request) {
 		return
 	}*/
 
-	result := c.service.Quotes(r.URL.Path)
+	c.service.Quotes()
 
 	// formatting stage
-	w.Write([]byte(result))
+	w.Write([]byte(""))
 }
 
 func NewHandler(service service.IQuotesService) IHandler {
