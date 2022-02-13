@@ -1,6 +1,8 @@
 package main
 
 import (
+	"bootcamp/client"
+	"bootcamp/config"
 	"bootcamp/handler"
 	"bootcamp/service"
 	"fmt"
@@ -8,8 +10,8 @@ import (
 )
 
 func main() {
-
-	service := service.NewService()
+	client := client.NewClient(config.C.ServiceURL)
+	service := service.NewService(client)
 	handler := handler.NewHandler(service)
 
 	http.HandleFunc("/", handler.Quotes)
